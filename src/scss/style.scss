@@ -1,0 +1,88 @@
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/fonts';
+
+// vendors
+
+// globals and overrides
+@import 'base/globals.scss';
+@import 'base/overrides.scss';
+
+// parts
+@import 'parts/buttons';
+@import 'parts/nav';
+
+// for one page custom code, feel free to add the custom css directly to this file.
+//
+// Custom landing page CSS
+//
+
+body {
+    background-color: $peach;
+}
+
+code {
+    background-color: $gray-dark;
+    padding: 5px 30px;
+    font-size: calc(clamp(1rem, 5vw, 1rem));
+    border-radius: .5rem;
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a { 
+    text-align: center;
+    font-weight: 900; 
+}
+
+h1, h2, h3 { color: $purple; }
+
+h1 { font-size: calc(clamp(2rem, 5vw, 5rem)); }
+
+p {
+    font-size: calc(clamp(1rem, 5vw, 3rem)); 
+    color: $orange;
+}
+
+a { color: $purple; }
+
+#hero {
+    a {
+        margin: 30px auto 0;
+        display: block;
+        width: 255px;
+        font-size: 1.2rem;
+    }
+}
+
+
+#Initial {
+    p, a { 
+        text-align: left;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+}
+
+#more {
+    .card {
+        // animation: fadeInUp;
+        // animation-duration: 8s;
+        // will override any additional animations be removed or added through javascript.
+    }
+}
+
+
+
+#closing-section {
+    p { font-size: calc(clamp(1rem, 5vw, 1.5rem))};
+    pre {
+        background-color: $gray-dark;
+        color: $white;
+        padding: 30px;
+        border-radius: .5rem;
+        white-space: pre-wrap;
+        
+    }
+}
